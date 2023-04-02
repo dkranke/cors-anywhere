@@ -1,0 +1,8 @@
+*.swp
+*.tmp
+*.log
+
+.git/
+coverage/
+node_modules/
+test/

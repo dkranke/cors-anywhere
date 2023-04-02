@@ -1,0 +1,13 @@
+services:
+  cors-anywhere:
+    image: dokranke/cors-anywhere
+    build:
+      context: .
+    # environment:
+      # Default requireHeader
+      # CORSANYWHERE_REQUIREHEADER: origin,x-requested-with
+      # Default removeHeaders
+      # CORSANYWHERE_REMOVEHEADERS: cookie,cookie2,x-request-start,x-request-id,via,connect-time
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
